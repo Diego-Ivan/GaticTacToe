@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.2"/>
+  <requires lib="libadwaita" version="1.0"/>
+
+  <template class="TicTacToeMainWindow" parent="AdwApplicationWindow">
+    <property name="title" translatable="yes">TicTacToe</property>
+    <property name="default-width">580</property>
+    <property name="default-height">450</property>
+    <property name="icon-name">io.github.diegoivan.TicTacToe</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="AdwHeaderBar">
+            <child type="end">
+              <object class="GtkMenuButton">
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="menu-model">action_menu</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label">
+            <property name="vexpand">true</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">Hello World!</property>
+            <style>
+              <class name="title-1"/>
+            </style>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+
+  <menu id="action_menu">
+    <section>
+      <item>
+        <attribute name="label">_About TicTacToe</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

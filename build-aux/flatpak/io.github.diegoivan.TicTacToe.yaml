@@ -1,0 +1,39 @@
+app-id: io.github.diegoivan.TicTacToe
+runtime: org.gnome.Platform
+runtime-version: master
+sdk: org.gnome.Sdk
+
+sdk-extensions:
+- org.freedesktop.Sdk.Extension.vala
+build-options:
+  prepend-path: /usr/lib/sdk/vala/bin/
+  prepend-ld-library-path: /usr/lib/sdk/vala/lib
+
+command: tictactoe-gtk4
+finish-args:
+- --share=ipc
+- --socket=fallback-x11
+- --socket=wayland
+- --device=dri
+
+cleanup:
+- /include
+- /lib/pkgconfig
+- /share/pkgconfig
+- /man
+- /share/doc
+- /share/vala
+- /share/vala-*
+- '*.la'
+- '*.a'
+
+modules:
+
+# Biography itself
+
+- name: TicTacToe
+  builddir: true
+  buildsystem: meson
+  sources:
+  - type: dir
+    path: ../..

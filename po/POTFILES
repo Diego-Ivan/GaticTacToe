@@ -1,0 +1,4 @@
+data/io.github.diegoivan.TicTacToe.desktop.in.in
+data/io.github.diegoivan.TicTacToe.appdata.xml.in.in
+data/io.github.diegoivan.TicTacToe.gschema.xml.in
+resources/ui/MainWindow.ui
