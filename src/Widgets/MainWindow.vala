@@ -20,6 +20,7 @@ namespace TicTacToe {
 
         private Player player_1;
         private Player player_2;
+        private int ties = 0;
 
         private Player _current_turn;
         public Player current_turn {
@@ -138,7 +139,8 @@ namespace TicTacToe {
                 return;
 
             if (empty_elements == 0) {
-                message ("It's a tie!");
+                ties++;
+                tie_counter.counter = ties;
                 return;
             }
 
@@ -152,7 +154,6 @@ namespace TicTacToe {
 
         private bool check_row (GridElement e) {
             /* Iterate over the element's row to check if it's complete */
-            message ("Iterating over rows");
             for (int column = 0; column < 3; column++) {
                 GridElement element = (GridElement) grid.get_child_at (column, (int) e.row);
                 if (element.element == null || element.element != e.element)
@@ -189,6 +190,7 @@ namespace TicTacToe {
                 GridElement element = (GridElement) grid.get_child_at (column, row);
                 if (element.element == null || element.element != e.element)
                     return false;
+                row--;
             }
             winner = e.element;
             return true;
