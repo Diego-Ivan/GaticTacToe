@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-namespace TicTacToe {
+namespace GaticTacToe {
     public class Player : Object {
         public string name { get; set; }
         public string text { get; set; }

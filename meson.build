@@ -1,4 +1,4 @@
-project('TicTacToe', ['c', 'vala'],
+project('gatictactoe', ['c', 'vala'],
            version: '0.0.1',
      meson_version: '>= 0.58.0',
    default_options: [ 'warning_level=2',
@@ -7,10 +7,10 @@ project('TicTacToe', ['c', 'vala'],
 
 pkgdata_dir = get_option('prefix') / get_option('datadir') / meson.project_name()
 
-app_title = 'tictactoe-gtk4'
-app_summary = 'Do some cool stuff'
+app_title = 'GaticTacToe'
+app_summary = 'Play TicTacToe locally with your friends'
 
-app_id = 'io.github.diegoivan.TicTacToe'
+app_id = 'io.github.diegoivan.GaticTacToe'
 app_name = meson.project_name()
 
 conf_data = configuration_data()
@@ -21,7 +21,7 @@ conf_data.set('APP_NAME', app_name)
 conf_data.set('APP_TITLE', app_title)
 conf_data.set('APP_SUMMARY', app_summary)
 
-TicTacToe_sources = []
+GaticTacToe_sources = []
 
 valac = meson.get_compiler('vala')
 vapi_dir = meson.project_source_root() / 'vapi'
@@ -50,7 +50,7 @@ if not libadwaita_dep.found()
   )
 endif
 
-TicTacToe_deps = [
+GaticTacToe_deps = [
     dependency('gio-2.0', version: '>= 2.50'),
     dependency('gtk4', version: '>= 4.2'),
     libadwaita_dep,

@@ -1,4 +1,4 @@
-TicTacToe_sources += [
+GaticTacToe_sources += [
   'Application.vala',
 
   'Models/Player.vala',
@@ -9,7 +9,7 @@ TicTacToe_sources += [
   'Widgets/WinnerPage.vala',
 ]
 
-executable(app_title, TicTacToe_sources,
+executable('gatictactoe', GaticTacToe_sources,
   vala_args: [
     '--target-glib=2.50',
     '--vapidir', vapi_dir,
@@ -21,6 +21,6 @@ executable(app_title, TicTacToe_sources,
     '-DGNOMELOCALEDIR="' + get_option('prefix') / get_option('localedir') + '"',
     '-DAPP_ID="' + app_id + '"',
   ],
-  dependencies: TicTacToe_deps,
+  dependencies: GaticTacToe_deps,
   install: true
 )

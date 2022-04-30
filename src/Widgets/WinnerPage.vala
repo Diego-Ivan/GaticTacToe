@@ -5,8 +5,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-namespace TicTacToe {
-    [GtkTemplate (ui = "/io/github/diegoivan/TicTacToe/ui/WinnerPage.ui")]
+namespace GaticTacToe {
+    [GtkTemplate (ui = "/io/github/diegoivan/GaticTacToe/ui/WinnerPage.ui")]
     public class WinnerPage : Gtk.Box {
         [GtkChild]
         private unowned Gtk.Label winner_label;

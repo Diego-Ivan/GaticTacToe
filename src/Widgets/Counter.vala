@@ -5,8 +5,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-namespace TicTacToe {
-    [GtkTemplate (ui = "/io/github/diegoivan/TicTacToe/ui/Counter.ui")]
+namespace GaticTacToe {
+    [GtkTemplate (ui = "/io/github/diegoivan/GaticTacToe/ui/Counter.ui")]
     public class Counter : Gtk.Box {
         [GtkChild]
         private unowned Gtk.Label name_label;

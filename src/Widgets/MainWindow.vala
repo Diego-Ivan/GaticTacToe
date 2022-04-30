@@ -5,8 +5,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-namespace TicTacToe {
-    [GtkTemplate (ui = "/io/github/diegoivan/TicTacToe/ui/MainWindow.ui")]
+namespace GaticTacToe {
+    [GtkTemplate (ui = "/io/github/diegoivan/GaticTacToe/ui/MainWindow.ui")]
     public class MainWindow : Adw.ApplicationWindow {
         [GtkChild]
         private unowned Gtk.Grid grid;

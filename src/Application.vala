@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-namespace TicTacToe {
+namespace GaticTacToe {
     public class Application : Adw.Application {
 
         struct AccelEntry {
@@ -55,7 +55,7 @@ namespace TicTacToe {
         protected override void activate () {
             var win = get_active_window ();
             if (win == null) {
-                win = new TicTacToe.MainWindow (this);
+                win = new GaticTacToe.MainWindow (this);
             }
             win.present ();
         }
@@ -69,7 +69,7 @@ namespace TicTacToe {
             };
 
             Gtk.show_about_dialog (active_window,
-                "program_name", "TicTacToe",
+                "program_name", "GaticTacToe",
                 "logo-icon-name", Config.APP_ID,
                 "copyright", COPYRIGHT,
                 "version", Config.VERSION,
@@ -92,7 +92,7 @@ namespace TicTacToe {
             );
             Intl.textdomain (Config.GETTEXT_PACKAGE);
 
-            return new TicTacToe.Application ().run (args);
+            return new GaticTacToe.Application ().run (args);
         }
     }
 }

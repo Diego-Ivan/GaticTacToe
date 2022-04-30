@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-namespace TicTacToe {
+namespace GaticTacToe {
     public class GridElement : Adw.Bin {
         /* Properties */
         public uint row { get; construct; }
