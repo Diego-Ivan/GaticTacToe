@@ -4,7 +4,7 @@
 gridelement {
   min-width: 80px;
   min-height: 80px;
-  border-color: @view_fg_color;
+  border-color: @borders;
 	border-style: solid;
 	border-width: 1px 1px;
 }
@@ -15,10 +15,10 @@ gridelement label {
 
 .counter {
   font-size: 140%;
+  font-weight: 600;
 }
 .player-label {
   font-size: 140%;
-  font-weight: 200;
 }
 
 .winner-label {

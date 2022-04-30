@@ -47,7 +47,7 @@ namespace TicTacToe {
                     name_provider.load_from_data ((uint8[]) "* {font-weight: 800;}");
                 }
                 else {
-                    name_provider.load_from_data ((uint8[]) "* {font-weight: 200;}");
+                    name_provider.load_from_data ((uint8[]) "* {font-weight: 400;}");
                 }
             }
         }

@@ -26,6 +26,7 @@ namespace TicTacToe {
                 if (value == null) {
                     item_animation.reverse = true;
                     item_animation.play ();
+                    provider.load_from_data ((uint8[]) "* {color: @borders;}");
                     return;
                 }
 

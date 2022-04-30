@@ -53,7 +53,6 @@ namespace TicTacToe {
                 winner.wins++;
             }
         }
-        public Player match_starter { get; private set; }
 
         private uint empty_elements = 9;
 
