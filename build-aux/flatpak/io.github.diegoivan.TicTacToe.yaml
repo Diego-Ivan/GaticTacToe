@@ -1,4 +1,4 @@
-app-id: io.github.diegoivan.TicTacToe
+app-id: io.github.diegoivan.GaticTacToe
 runtime: org.gnome.Platform
 runtime-version: master
 sdk: org.gnome.Sdk
@@ -9,7 +9,7 @@ build-options:
   prepend-path: /usr/lib/sdk/vala/bin/
   prepend-ld-library-path: /usr/lib/sdk/vala/lib
 
-command: tictactoe-gtk4
+command: gatictactoe
 finish-args:
 - --share=ipc
 - --socket=fallback-x11
@@ -31,7 +31,7 @@ modules:
 
 # Biography itself
 
-- name: TicTacToe
+- name: GaticTacToe
   builddir: true
   buildsystem: meson
   sources:

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=GaticTacToe
+Icon=io.github.diegoivan.GaticTacToe
+Exec=gatictactoe
+Terminal=false
+Type=Application
+Categories=Game;GNOME;GTK;
+StartupNotify=true
