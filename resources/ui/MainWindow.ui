@@ -3,12 +3,12 @@
   <requires lib="gtk" version="4.2"/>
   <requires lib="libadwaita" version="1.0"/>
 
-  <template class="TicTacToeMainWindow" parent="AdwApplicationWindow">
+  <template class="GaticTacToeMainWindow" parent="AdwApplicationWindow">
     <property name="title"></property>
     <property name="default-width">360</property>
     <property name="default-height">400</property>
     <property name="resizable">false</property>
-    <property name="icon-name">io.github.diegoivan.TicTacToe</property>
+    <property name="icon-name">io.github.diegoivan.GaticTacToe</property>
     <child>
       <object class="GtkBox">
         <property name="orientation">vertical</property>
@@ -43,15 +43,15 @@
                             <property name="orientation">horizontal</property>
                             <property name="homogeneous">true</property>
                             <child>
-                              <object class="TicTacToeCounter" id="p1_counter"></object>
+                              <object class="GaticTacToeCounter" id="p1_counter"></object>
                             </child>
                             <child>
-                              <object class="TicTacToeCounter" id="tie_counter">
+                              <object class="GaticTacToeCounter" id="tie_counter">
                                 <property name="player_name">Tie</property>
                               </object>
                             </child>
                             <child>
-                              <object class="TicTacToeCounter" id="p2_counter"></object>
+                              <object class="GaticTacToeCounter" id="p2_counter"></object>
                             </child>
                           </object>
                         </child>
@@ -72,7 +72,7 @@
                   <object class="GtkStackPage">
                     <property name="name">winner</property>
                     <property name="child">
-                      <object class="TicTacToeWinnerPage" id="winner_page">
+                      <object class="GaticTacToeWinnerPage" id="winner_page">
                       </object>
                     </property>
                   </object>
@@ -88,7 +88,7 @@
   <menu id="action_menu">
     <section>
       <item>
-        <attribute name="label">_About TicTacToe</attribute>
+        <attribute name="label">_About GaticTacToe</attribute>
         <attribute name="action">app.about</attribute>
       </item>
     </section>

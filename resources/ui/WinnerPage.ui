@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <template class="TicTacToeWinnerPage" parent="GtkBox">
+  <template class="GaticTacToeWinnerPage" parent="GtkBox">
     <property name="orientation">vertical</property>
     <property name="valign">center</property>
     <property name="spacing">24</property>

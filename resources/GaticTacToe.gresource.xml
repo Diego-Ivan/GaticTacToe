@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/github/diegoivan/GaticTacToe">
+    <file>style.css</file>
+    <file>style-dark.css</file>
+
+    <file preprocess="xml-stripblanks">ui/MainWindow.ui</file>
+    <file preprocess="xml-stripblanks">ui/Counter.ui</file>
+    <file preprocess="xml-stripblanks">ui/WinnerPage.ui</file>
+  </gresource>
+</gresources>
