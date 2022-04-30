@@ -75,6 +75,7 @@ namespace GaticTacToe {
                 "version", Config.VERSION,
                 "authors", AUTHORS,
                 "license-type", Gtk.License.GPL_3_0,
+                "wrap-license", true,
                 /// TRANSLATORS: Write your Name<email> here
                 "translator-credits", _("translator-credits"),
                 null
