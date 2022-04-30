@@ -1,0 +1,21 @@
+@define-color x_color @accent_color;
+@define-color o_color @red_3;
+
+gridelement {
+  min-width: 80px;
+  min-height: 80px;
+  border-color: @view_fg_color;
+	border-style: solid;
+	border-width: 1px 1px;
+}
+
+gridelement label {
+  font-size: 400%;
+}
+
+.counter {
+  font-size: 140%;
+}
+.player-label {
+  font-size: 140%;
+}

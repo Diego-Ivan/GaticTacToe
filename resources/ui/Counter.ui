@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.2"/>
+  <template class="TicTacToeCounter" parent="GtkBox">
+    <property name="orientation">vertical</property>
+    <child>
+      <object class="GtkLabel" id="name_label">
+        <style>
+          <class name="player-label"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="counter_label">
+        <style>
+          <class name="counter"/>
+        </style>
+      </object>
+    </child>
+  </template>
+</interface>

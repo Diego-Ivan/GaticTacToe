@@ -1,6 +1,10 @@
 TicTacToe_sources += [
   'Application.vala',
 
+  'Models/Player.vala',
+
+  'Widgets/Counter.vala',
+  'Widgets/GridElement.vala',
   'Widgets/MainWindow.vala',
 ]
 

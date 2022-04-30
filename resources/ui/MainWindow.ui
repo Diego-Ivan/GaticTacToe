@@ -4,7 +4,7 @@
   <requires lib="libadwaita" version="1.0"/>
 
   <template class="TicTacToeMainWindow" parent="AdwApplicationWindow">
-    <property name="title" translatable="yes">TicTacToe</property>
+    <property name="title"></property>
     <property name="default-width">580</property>
     <property name="default-height">450</property>
     <property name="icon-name">io.github.diegoivan.TicTacToe</property>
@@ -13,7 +13,10 @@
         <property name="orientation">vertical</property>
         <child>
           <object class="AdwHeaderBar">
-            <child type="end">
+            <style>
+              <class name="flat"/>
+            </style>
+            <child type="start">
               <object class="GtkMenuButton">
                 <property name="icon-name">open-menu-symbolic</property>
                 <property name="menu-model">action_menu</property>
@@ -21,14 +24,30 @@
             </child>
           </object>
         </child>
+
         <child>
-          <object class="GtkLabel" id="label">
-            <property name="vexpand">true</property>
+          <object class="GtkBox">
+            <property name="orientation">horizontal</property>
+            <property name="homogeneous">true</property>
+            <child>
+              <object class="TicTacToeCounter" id="p1_counter"></object>
+            </child>
+            <child>
+              <object class="TicTacToeCounter" id="tie_counter">
+                <property name="player_name">Tie</property>
+              </object>
+            </child>
+            <child>
+              <object class="TicTacToeCounter" id="p2_counter"></object>
+            </child>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkGrid" id="grid">
             <property name="valign">center</property>
-            <property name="label" translatable="yes">Hello World!</property>
-            <style>
-              <class name="title-1"/>
-            </style>
+            <property name="vexpand">true</property>
+            <property name="halign">center</property>
           </object>
         </child>
       </object>
