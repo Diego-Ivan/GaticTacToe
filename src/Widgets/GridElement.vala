@@ -72,6 +72,8 @@ namespace GaticTacToe {
             var animation_target = new Adw.CallbackAnimationTarget (on_item_revealed);
             item_animation = new Adw.TimedAnimation (item, 0, 1, 150, animation_target);
             item_animation.easing = EASE_IN_OUT_SINE;
+
+            accessible_role = BUTTON;
         }
 
         /* Methods */
