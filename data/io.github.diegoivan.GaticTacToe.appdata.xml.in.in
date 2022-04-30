@@ -3,17 +3,56 @@
   <id>io.github.diegoivan.GaticTacToe</id>
   <name>GaticTacToe</name>
   <summary>Play Tic-tac-toe with your friends</summary>
-  <description>
-    <p>Play Tic-tac-toe locally and have fun with your friends!</p>
-  </description>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
+
+  <description>
+    <p>Play Tic-Tac-Toe with your friends when you're bored or when you want to have a fun time.</p>
+  </description>
+
   <provides>
     <binary>gatictactoe</binary>
   </provides>
+
   <developer_name>Diego Iván</developer_name>
   <url type="homepage">https://github.com/Diego-Ivan/GaticTacToe</url>
   <url type="bugtracker">https://github.com/Diego-Ivan/GaticTacToe/issues</url>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/Diego-Ivan/GaticTacToe/v0.5/data/screenshots/01.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/Diego-Ivan/GaticTacToe/v0.5/data/screenshots/02.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/Diego-Ivan/GaticTacToe/v0.5/data/screenshots/03.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/Diego-Ivan/GaticTacToe/v0.5/data/screenshots/04.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/Diego-Ivan/GaticTacToe/v0.5/data/screenshots/05.png</image>
+    </screenshot>
+  </screenshots>
+
+  <releases>
+    <release version="0.5" date="2022-04-30">
+      <description>
+        <p>First release of GaticTacToe! Play Tic-tac-toe locally with your friends and have a good time together</p>
+      </description>
+    </release>
+  </releases>
+
+  <!-- Device Recommendations -->
+  <requires>
+    <display_length compare="ge">350</display_length>
+  </requires>
+  <recommends>
+    <control>touch</control>
+    <control>pointing</control>
+  </recommends>
+
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
@@ -38,6 +77,4 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
-  <releases>
-  </releases>
 </component>
