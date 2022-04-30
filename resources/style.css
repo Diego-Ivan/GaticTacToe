@@ -6,7 +6,7 @@ gridelement {
   min-height: 80px;
   border-color: @borders;
 	border-style: solid;
-	border-width: 1px 1px;
+	border-width: 3px;
 }
 
 gridelement label {
