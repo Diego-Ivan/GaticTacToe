@@ -6,6 +6,7 @@ TicTacToe_sources += [
   'Widgets/Counter.vala',
   'Widgets/GridElement.vala',
   'Widgets/MainWindow.vala',
+  'Widgets/WinnerPage.vala',
 ]
 
 executable(app_title, TicTacToe_sources,

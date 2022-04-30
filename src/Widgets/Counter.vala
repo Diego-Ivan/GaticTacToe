@@ -44,10 +44,10 @@ namespace TicTacToe {
         public bool on_turn {
             set {
                 if (value) {
-                    name_provider.load_from_data ((uint8[]) "* {font-weight: 700;}");
+                    name_provider.load_from_data ((uint8[]) "* {font-weight: 800;}");
                 }
                 else {
-                    name_provider.load_from_data ((uint8[]) "* {font-weight: 400;}");
+                    name_provider.load_from_data ((uint8[]) "* {font-weight: 200;}");
                 }
             }
         }

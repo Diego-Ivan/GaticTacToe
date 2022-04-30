@@ -18,4 +18,10 @@ gridelement label {
 }
 .player-label {
   font-size: 140%;
+  font-weight: 200;
+}
+
+.winner-label {
+  font-size: 200%;
+  font-weight: 800;
 }

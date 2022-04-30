@@ -17,6 +17,10 @@ namespace TicTacToe {
         private unowned Counter p2_counter;
         [GtkChild]
         private unowned Counter tie_counter;
+        [GtkChild]
+        private unowned Gtk.Stack main_stack;
+        [GtkChild]
+        private unowned WinnerPage winner_page;
 
         private Player player_1;
         private Player player_2;
@@ -43,6 +47,13 @@ namespace TicTacToe {
                 _winner = value;
                 if (value == null)
                     return;
+
+                winner_page.winner = value;
+
+                Timeout.add (500, (() => {
+                    main_stack.set_visible_child_full ("winner", CROSSFADE);
+                    return false;
+                }));
 
                 winner.wins++;
             }
@@ -96,6 +107,9 @@ namespace TicTacToe {
 
         private void start_new_match () {
             empty_elements = 9;
+            main_stack.set_visible_child_full ("game", CROSSFADE);
+
+            /* Clear all grid elements */
             for (int row = 0; row < 3; row++) {
                 for (int column = 0; column < 3; column++) {
                     GridElement element = (GridElement) grid.get_child_at (column, row);
@@ -103,6 +117,7 @@ namespace TicTacToe {
                 }
             }
 
+            /* Decide who should start the next game */
             if (winner == null) {
                  if (Random.int_range (1, 2) == 1) {
                     current_turn = player_1;
