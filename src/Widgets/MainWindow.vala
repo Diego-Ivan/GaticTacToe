@@ -49,12 +49,7 @@ namespace TicTacToe {
                     return;
 
                 winner_page.winner = value;
-
-                Timeout.add (500, (() => {
-                    main_stack.set_visible_child_full ("winner", CROSSFADE);
-                    return false;
-                }));
-
+                reveal_winner ();
                 winner.wins++;
             }
         }
@@ -103,6 +98,13 @@ namespace TicTacToe {
                     grid.attach (e, column, row);
                 }
             }
+        }
+
+        private void reveal_winner () {
+            Timeout.add (500, (() => {
+                main_stack.set_visible_child_full ("winner", CROSSFADE);
+                return false;
+            }));
         }
 
         private void start_new_match () {
@@ -156,6 +158,8 @@ namespace TicTacToe {
             if (empty_elements == 0) {
                 ties++;
                 tie_counter.counter = ties;
+                winner_page.winner = null;
+                reveal_winner ();
                 return;
             }
 
