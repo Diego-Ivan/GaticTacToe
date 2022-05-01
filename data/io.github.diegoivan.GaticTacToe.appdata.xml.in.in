@@ -10,6 +10,11 @@
     <p>Play Tic-Tac-Toe with your friends when you're bored or when you want to have a fun time.</p>
   </description>
 
+  <keywords>
+    <keyword>Tic-tac-toe</keyword>
+    <keyword>tic Tac Toe</keyword>
+  </keywords>
+
   <provides>
     <binary>gatictactoe</binary>
   </provides>
