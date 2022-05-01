@@ -18,7 +18,7 @@ if desktop_utils.found()
   )
 endif
 
-appstream_file = files ('io.github.diegoivan.GaticTacToe.appdata.xml.in.in')
+appstream_file = files ('io.github.diegoivan.GaticTacToe.appdata.xml')
 
 appstream_util = find_program('appstream-util', required: false)
 if appstream_util.found()
