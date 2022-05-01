@@ -18,7 +18,13 @@ if desktop_utils.found()
   )
 endif
 
-appstream_file = files ('io.github.diegoivan.GaticTacToe.appdata.xml.in')
+appstream_file = i18n.merge_file(
+  input: 'io.github.diegoivan.GaticTacToe.appdata.xml.in',
+  output: 'io.github.diegoivan.GaticTacToe.appdata.xml',
+  po_dir: '../po',
+  install: true,
+  install_dir: join_paths(get_option('datadir'), 'appdata')
+)
 
 appstream_util = find_program('appstream-util', required: false)
 if appstream_util.found()

@@ -4,5 +4,5 @@ Icon=io.github.diegoivan.GaticTacToe
 Exec=gatictactoe
 Terminal=false
 Type=Application
-Categories=Games;GNOME;GTK;
+Categories=Game;GNOME;GTK
 StartupNotify=true
