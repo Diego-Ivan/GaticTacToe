@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>io.github.diegoivan.GaticTacToe.desktop</id>
+  <id>io.github.diegoivan.GaticTacToe</id>
   <name>GaticTacToe</name>
   <summary>Play Tic-tac-toe with your friends</summary>
   <metadata_license>CC0-1.0</metadata_license>
