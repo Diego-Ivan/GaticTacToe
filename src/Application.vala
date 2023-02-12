@@ -1,6 +1,6 @@
 /* Application.vala
  *
- * Copyright 2022 Diego Iván <diegoivan.mae@gmail.com>
+ * Copyright 2022-2023 Diego Iván <diegoivan.mae@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -68,18 +68,19 @@ namespace GaticTacToe {
                 null
             };
 
-            Gtk.show_about_dialog (active_window,
-                "program_name", "GaticTacToe",
-                "logo-icon-name", Config.APP_ID,
-                "copyright", COPYRIGHT,
-                "version", Config.VERSION,
-                "authors", AUTHORS,
-                "license-type", Gtk.License.GPL_3_0,
-                "wrap-license", true,
-                /// TRANSLATORS: Write your Name<email> here
-                "translator-credits", _("translator-credits"),
-                null
-            );
+            var about = new Adw.AboutWindow () {
+                application_icon = Config.APP_ID,
+                application_name = "GaticTacToe",
+                copyright = COPYRIGHT,
+                developer_name = "Diego Iván",
+                developers = AUTHORS,
+                license_type = GPL_3_0,
+                transient_for = this.active_window,
+                // translators: Write your name<email> here :D
+                translator_credits = _("translator_credits"),
+                version = Config.VERSION,
+            };
+            about.present ();
         }
 
         static int main (string[] args) {
