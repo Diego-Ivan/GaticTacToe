@@ -1,6 +1,6 @@
 project('gatictactoe', ['c', 'vala'],
-           version: '0.5',
-     meson_version: '>= 0.58.0',
+           version: '0.5.1',
+     meson_version: '>= 0.59.0',
    default_options: [ 'warning_level=2',
        	            ],
 )

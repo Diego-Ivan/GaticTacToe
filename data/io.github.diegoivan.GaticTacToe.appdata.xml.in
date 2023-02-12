@@ -39,9 +39,10 @@
   </screenshots>
 
   <releases>
-    <release version="0.5" date="2022-04-30">
+    <release version="0.5.1" date="2023-02-12">
       <description>
-        <p>First release of GaticTacToe! Play Tic-tac-toe locally with your friends and have a good time together</p>
+        <p>Update runtime to GNOME 43</p>
+        <p>Use new about dialog</p>
       </description>
     </release>
   </releases>
