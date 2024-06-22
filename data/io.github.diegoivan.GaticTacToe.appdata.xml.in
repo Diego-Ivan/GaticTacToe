@@ -22,6 +22,9 @@
   <developer_name>Diego Iván</developer_name>
   <url type="homepage">https://github.com/Diego-Ivan/GaticTacToe</url>
   <url type="bugtracker">https://github.com/Diego-Ivan/GaticTacToe/issues</url>
+  <url type="vcs-browser">https://github.com/Diego-Ivan/GaticTacToe</url>
+  <url type="translate">https://github.com/Diego-Ivan/GaticTacToe/tree/main/po</url>
+  <launchable type="desktop-id">io.github.diegoivan.GaticTacToe.desktop</launchable>
 
   <screenshots>
     <screenshot type="default">
@@ -56,28 +59,5 @@
     <control>pointing</control>
   </recommends>
 
-  <content_rating type="oars-1.1">
-    <content_attribute id="violence-cartoon">none</content_attribute>
-    <content_attribute id="violence-fantasy">none</content_attribute>
-    <content_attribute id="violence-realistic">none</content_attribute>
-    <content_attribute id="violence-bloodshed">none</content_attribute>
-    <content_attribute id="violence-sexual">none</content_attribute>
-    <content_attribute id="violence-desecration">none</content_attribute>
-    <content_attribute id="violence-slavery">none</content_attribute>
-    <content_attribute id="violence-worship">none</content_attribute>
-    <content_attribute id="drugs-alcohol">none</content_attribute>
-    <content_attribute id="drugs-narcotics">none</content_attribute>
-    <content_attribute id="drugs-tobacco">none</content_attribute>
-    <content_attribute id="sex-nudity">none</content_attribute>
-    <content_attribute id="language-profanity">none</content_attribute>
-    <content_attribute id="language-humor">none</content_attribute>
-    <content_attribute id="language-discrimination">none</content_attribute>
-    <content_attribute id="social-chat">none</content_attribute>
-    <content_attribute id="social-info">none</content_attribute>
-    <content_attribute id="social-audio">none</content_attribute>
-    <content_attribute id="social-location">none</content_attribute>
-    <content_attribute id="social-contacts">none</content_attribute>
-    <content_attribute id="money-purchasing">none</content_attribute>
-    <content_attribute id="money-gambling">none</content_attribute>
-  </content_rating>
+  <content_rating type="oars-1.1" />
 </component>
